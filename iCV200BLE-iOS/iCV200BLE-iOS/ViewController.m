@@ -15,6 +15,7 @@
 @implementation ViewController
 
 -(IBAction)scan_start:(id)sender{
+    NSLog(@"Scan device started.");
     return;
 }
 
