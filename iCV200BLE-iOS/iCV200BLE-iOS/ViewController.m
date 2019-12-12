@@ -16,6 +16,7 @@
 
 -(IBAction)scan_start:(id)sender{
     NSLog(@"Scan device started.");
+    NSLog(@"test again");
     return;
 }
 
