@@ -1,0 +1,4 @@
+framework module EcgService {
+  header "EcgService-Swift.h"
+  requires objc
+}
