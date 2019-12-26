@@ -17,6 +17,8 @@
 		EE4930FC23AA4D43006F71C8 /* EcgService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4930FA23AA4D2E006F71C8 /* EcgService.framework */; };
 		EE4930FD23AA4D43006F71C8 /* EcgService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE4930FA23AA4D2E006F71C8 /* EcgService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE49310423ABA5BA006F71C8 /* libiCV200Ble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE49310323ABA5BA006F71C8 /* libiCV200Ble.a */; };
+		EE8005E223B44C6A00247D19 /* UIEcgView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8005E123B44C6A00247D19 /* UIEcgView.m */; };
+		EE8005E323B4550200247D19 /* libiCV200Ble.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE49310323ABA5BA006F71C8 /* libiCV200Ble.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EE8005E323B4550200247D19 /* libiCV200Ble.a in Embed Frameworks */,
 				EE4930FD23AA4D43006F71C8 /* EcgService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,6 +53,8 @@
 		EE4930F623AA4930006F71C8 /* iCV200Ble_ecg.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iCV200Ble_ecg.bundle; sourceTree = "<group>"; };
 		EE4930FA23AA4D2E006F71C8 /* EcgService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EcgService.framework; sourceTree = "<group>"; };
 		EE49310323ABA5BA006F71C8 /* libiCV200Ble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiCV200Ble.a; path = "../../../../Library/Developer/Xcode/DerivedData/easyecg-etplxqnndevuaqgrpbppxncwihbf/Build/Products/Debug-iphoneos/libiCV200Ble.a"; sourceTree = "<group>"; };
+		EE8005E023B44C6A00247D19 /* UIEcgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEcgView.h; sourceTree = "<group>"; };
+		EE8005E123B44C6A00247D19 /* UIEcgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIEcgView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,8 @@
 				EE237EB223A090230036B2E5 /* AppDelegate.m */,
 				EE237EB723A090230036B2E5 /* ViewController.h */,
 				EE237EB823A090230036B2E5 /* ViewController.m */,
+				EE8005E023B44C6A00247D19 /* UIEcgView.h */,
+				EE8005E123B44C6A00247D19 /* UIEcgView.m */,
 				EE237EBA23A090230036B2E5 /* Main.storyboard */,
 				EE237EBD23A090230036B2E5 /* Assets.xcassets */,
 				EE237EBF23A090230036B2E5 /* LaunchScreen.storyboard */,
@@ -185,6 +192,7 @@
 			files = (
 				EE237EB923A090230036B2E5 /* ViewController.m in Sources */,
 				EE237EB323A090230036B2E5 /* AppDelegate.m in Sources */,
+				EE8005E223B44C6A00247D19 /* UIEcgView.m in Sources */,
 				EE237EC423A090230036B2E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

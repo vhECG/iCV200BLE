@@ -22,14 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol NSEcgDeviceDelegate;
 
 @interface NSEcgDeviceController:NSObject{
-    id <NSEcgDeviceDelegate> delegate;
-    iCV200BLEStatus status;
-    float rate;
-    float uVpb;
-    NSUInteger acfreq;
-    BOOL onFilter;
-    float high_freq;
-    NSUInteger low_freq;
+    id <NSEcgDeviceDelegate> delegate;              //Receive ECG etc data.
+    iCV200BLEStatus status;                         //The device status.
+    float rate;                                     //ECG points per second.
+    float uVpb;                                     //Value is float type and unit is uV.
+    NSUInteger acfreq;                              //set filter AC Power for your local area.
+    BOOL onFilter;                                  //
+    float high_freq;                                //highPassFreq High pass frequency
+    NSUInteger low_freq;                            //lowPassFreq Low pass frequency
     NSMutableArray *available_devices_array;
     NSString *current_connected_device_name;
     Completion_ECG_Device_Changed_Handler device_changed_handler;
